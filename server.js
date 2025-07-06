@@ -7,13 +7,18 @@ const authRoutes = require("./routes/auth");
 const transactionRoutes = require("./routes/transactions");
 
 const app = express();
-app.use(cors());
+
+// ✅ HERE: CORS config should be added before any routes or body parsing
+app.use(cors({
+  origin: "https://bright-project-main.vercel.app/"  // <-- replace with your actual frontend URL
+}));
+
 app.use(bodyParser.json());
 
 app.use("/api/auth", authRoutes);
 app.use("/api/transactions", transactionRoutes);
 
-// ✅ Connect to MongoDB Atlas (no deprecated options)
+// Connect to MongoDB Atlas
 mongoose.connect(
   "mongodb+srv://davidemperor1445:prospermongodb@cluster0.igwin.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 )
