@@ -10,5 +10,17 @@
     "username": "collins bright",
     "email": "collinsbright@gmail.com",
     "password": "$2b$10$.0x.A0bhQqrBFMm2jVBUmejFrO8j3/4QZqAypZJz8ZDJMCHHd1oRm"
+  },
+  {
+    "id": 1751843686400,
+    "username": "davidemperor1@gmail.com",
+    "email": "davidemperor15@gmail.com",
+    "password": "$2b$10$upGLNLzBzmr07ewiM4ThmOpi1UA.pnlOgB.pVgMz87cd7Xh.fZthm"
+  },
+  {
+    "id": 1751844511408,
+    "username": "testuser",
+    "email": "testuser@gmail.com",
+    "password": "$2b$10$AY6AVE29RXIBtYXLvAWjfOC7jswx1gnLD4LMpsxlw7YDsRh6KAaZi"
   }
 ]
