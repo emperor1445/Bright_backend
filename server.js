@@ -17,7 +17,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/transactions", transactionRoutes);
 
 // Connect to MongoDB Atlas
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect("mongodb+srv://davidemperor1445:prospermongodb@cluster0.igwin.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 .then(() => {
   console.log("✅ MongoDB connected");
