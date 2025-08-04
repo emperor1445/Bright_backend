@@ -7,7 +7,7 @@ const transactionRoutes = require("./routes/transactions");
 
 const app = express();
 const corsOptions = {
-  origin: "https://bright-project-main-wz5c.vercel.app/", // or "*" temporarily to test
+  origin: "https://bright-project-main-wz5c.vercel.app", 
   credentials: true,
 };
 app.use(cors(corsOptions));
@@ -26,5 +26,4 @@ mongoose.connect(process.env.MONGO_URI)
   app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
 })
 .catch((err) => console.error("❌ MongoDB connection error:", err));
-
 
